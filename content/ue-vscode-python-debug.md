@@ -24,17 +24,17 @@ UE4.26开始内建Python3.7.7，UE5则是升级到了Python3.9.7。可以在Unre
 
 ## 1. 配置代码提示补全
 
-第一步，在Unreal Editor -- Edit -- Editor preference中勾选Python插件的Developer Mode，此时在项目路径下就会出现 `<span class="ne-text">(ProjectDirectory)/Intermediate/PythonStub/unreal.py</span>`文件。
+第一步，在Unreal Editor -- Edit -- Editor preference中勾选Python插件的Developer Mode，此时在项目路径下就会出现 `(ProjectDirectory)/Intermediate/PythonStub/unreal.py`文件。
 
 ![1765853434217](image/ue-vscode-python-debug/1765853434217.png)
 
 ![1765853440662](image/ue-vscode-python-debug/1765853440662.png)
 
-第二步，将这个路径添加到 `<span class="ne-text">settings.json</span>`当中就能实现代码自动补全了。
+第二步，将这个路径添加到 `settings.json`当中就能实现代码自动补全了。
 
 ![1765853445439](image/ue-vscode-python-debug/1765853445439.png)
 
-第三步（可选），设置python解释器路径：在vscode中按下 `<span class="ne-text">ctrl+p</span>`在跳出的命令框中输入 `<span class="ne-text">Python: Select Interpreter</span>`回车后选择 `<span class="ne-text">(EngineDirectory)/Engine/Binaries/ThirdParty/Python3/Win64/python.exe</span>`为当前workspace的解释器。
+第三步（可选），设置python解释器路径：在vscode中按下 `ctrl+p`在跳出的命令框中输入 `Python: Select Interpreter`回车后选择 `(EngineDirectory)/Engine/Binaries/ThirdParty/Python3/Win64/python.exe`为当前workspace的解释器。
 
 ![1765853449860](image/ue-vscode-python-debug/1765853449860.png)
 
@@ -42,7 +42,7 @@ UE4.26开始内建Python3.7.7，UE5则是升级到了Python3.9.7。可以在Unre
 
 ## 2. 安装debugpy
 
-在 `<span class="ne-text">(EngineDirectory)/Engine/Binaries/ThirdParty/Python3/Win64</span>`中运行命令 `<span class="ne-text">./python -m pip install debugpy</span>`，安装成功后就能在 `<span class="ne-text">(EngineDirectory)/Engine/Binaries/ThirdParty/Python3/Win64/Lib/site-packages</span>`中看到。
+在 `(EngineDirectory)/Engine/Binaries/ThirdParty/Python3/Win64`中运行命令 `./python -m pip install debugpy`，安装成功后就能在 `(EngineDirectory)/Engine/Binaries/ThirdParty/Python3/Win64/Lib/site-packages`中看到。
 
 ![1765853455267](image/ue-vscode-python-debug/1765853455267.png)
 

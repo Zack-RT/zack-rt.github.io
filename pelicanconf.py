@@ -36,8 +36,15 @@ DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = ['image']
 
+# Favicon configuration
+FAVICON = 'image/favicon.svg'  # Modern browsers support SVG favicons
+FAVICON_IE = 'image/favicon.ico'  # Legacy IE support
+
 THEME = "themes/pelican-bootstrap3"
 
 PLUGINS = ['i18n_subsites']
+
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_SIDEBAR = False
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}

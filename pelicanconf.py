@@ -45,6 +45,7 @@ EXTRA_PATH_METADATA = {
 # Favicon configuration
 FAVICON = 'image/favicon.svg'  # Modern browsers support SVG favicons
 FAVICON_IE = 'image/favicon.ico'  # Legacy IE support
+OPEN_GRAPH_IMAGE = 'image/favicon.svg'
 
 THEME = "themes/pelican-bootstrap3"
 

@@ -34,7 +34,13 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-STATIC_PATHS = ['image']
+STATIC_PATHS = ['image', 'static']
+ARTICLE_EXCLUDES = ['static']
+
+# Copy google verification file from static to root directory
+EXTRA_PATH_METADATA = {
+    'static/google3b3da8dd0049233f.html': {'path': 'google3b3da8dd0049233f.html'},
+}
 
 # Favicon configuration
 FAVICON = 'image/favicon.svg'  # Modern browsers support SVG favicons

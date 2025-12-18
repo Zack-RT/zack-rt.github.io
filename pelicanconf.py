@@ -16,17 +16,20 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (
+# LINKS = (
     # ("Pelican", "https://getpelican.com/"),
     # ("Python.org", "https://www.python.org/"),
     # ("Jinja2", "https://palletsprojects.com/p/jinja/"),
     # ("You can modify those links in your config file", "#"),
-)
+# )
 
 # Social widget
+SOCIAL_WIDGET_NAME = 'Home'
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("About Me", "/pages/about.html", "user"),
+    ("Categories", "/categories.html", "folder"),
+    ("Tag", "/tags.html", "tag"),
+    ("Archives", "/archives.html", "archive"),
 )
 
 DEFAULT_PAGINATION = 10
@@ -45,7 +48,6 @@ EXTRA_PATH_METADATA = {
 # Favicon configuration
 FAVICON = 'image/favicon.svg'  # Modern browsers support SVG favicons
 FAVICON_IE = 'image/favicon.ico'  # Legacy IE support
-OPEN_GRAPH_IMAGE = 'image/favicon.png'
 
 THEME = "themes/pelican-bootstrap3"
 
@@ -53,6 +55,7 @@ PLUGINS = ['i18n_subsites']
 
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_SIDEBAR = False
+DISPLAY_PAGES_ON_MENU = False
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 

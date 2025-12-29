@@ -43,6 +43,7 @@ ARTICLE_EXCLUDES = ['static']
 # Copy google verification file from static to root directory
 EXTRA_PATH_METADATA = {
     'static/google3b3da8dd0049233f.html': {'path': 'google3b3da8dd0049233f.html'},
+    'static/4dd9a24145d45976d0fe9ea43084a355.txt': {'path': '4dd9a24145d45976d0fe9ea43084a355.txt'},
 }
 
 # Favicon configuration
